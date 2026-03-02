@@ -1,0 +1,571 @@
+/**
+ * AI Content Generator — Admin Styles
+ *
+ * @package AITF
+ */
+
+/* ============================================================
+   Layout & Cards
+   ============================================================ */
+.aitf-wrap {
+    max-width: 1100px;
+    margin: 20px auto 40px;
+}
+
+.aitf-page-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 23px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.aitf-page-title .dashicons {
+    font-size: 28px;
+    width: 28px;
+    height: 28px;
+    color: #2271b1;
+}
+
+.aitf-card {
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.aitf-card h2 {
+    margin-top: 0;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #f0f0f1;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* ============================================================
+   Status Card
+   ============================================================ */
+.aitf-status-card {
+    background: linear-gradient(135deg, #1d2327 0%, #2c3338 100%);
+    color: #fff;
+    border: none;
+}
+
+.aitf-status-card h2 {
+    color: #fff;
+    border-bottom-color: rgba(255, 255, 255, 0.15);
+}
+
+.aitf-status-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin: 16px 0;
+}
+
+.aitf-status-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.aitf-status-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    opacity: 0.7;
+}
+
+.aitf-status-value {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.aitf-status-actions {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.aitf-btn-run {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    padding: 8px 20px;
+    height: auto;
+    background: #2271b1;
+    border-color: #2271b1;
+}
+
+.aitf-btn-run:hover {
+    background: #135e96;
+    border-color: #135e96;
+}
+
+.aitf-btn-run .dashicons {
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+}
+
+/* ============================================================
+   Badges
+   ============================================================ */
+.aitf-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.aitf-badge-success {
+    background: #d4edda;
+    color: #155724;
+}
+
+.aitf-badge-warning {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.aitf-badge-danger {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.aitf-count-badge {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 600;
+    background: #2271b1;
+    color: #fff;
+    margin-left: 8px;
+}
+
+.aitf-event-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.aitf-event-cron_run { background: #e8f0fe; color: #1a73e8; }
+.aitf-event-fetch    { background: #e6f4ea; color: #137333; }
+.aitf-event-generate { background: #fef7e0; color: #b06000; }
+.aitf-event-publish  { background: #e8f5e9; color: #2e7d32; }
+.aitf-event-error    { background: #fce8e6; color: #c5221f; }
+
+/* ============================================================
+   Forms
+   ============================================================ */
+.aitf-form-table th {
+    width: 200px;
+    vertical-align: top;
+    padding-top: 15px;
+}
+
+.aitf-inline-form {
+    margin-top: 12px;
+}
+
+.aitf-input-group {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.aitf-input-group input[type="url"],
+.aitf-input-group input[type="text"] {
+    flex: 1;
+    max-width: 500px;
+}
+
+.aitf-toggle-password {
+    padding: 4px 8px !important;
+    vertical-align: middle;
+}
+
+.aitf-toggle-password .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+}
+
+/* ============================================================
+   Tables
+   ============================================================ */
+.aitf-table th,
+.aitf-table td {
+    padding: 10px 12px;
+    vertical-align: middle;
+}
+
+.aitf-table .aitf-actions {
+    display: flex;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+.aitf-btn-danger {
+    color: #b32d2e !important;
+    border-color: #b32d2e !important;
+}
+
+.aitf-btn-danger:hover {
+    background: #b32d2e !important;
+    color: #fff !important;
+}
+
+.aitf-link-muted {
+    color: #8c8f94;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.aitf-link-muted:hover {
+    color: #2271b1;
+}
+
+.aitf-link-muted .dashicons {
+    font-size: 14px;
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+}
+
+.aitf-nowrap {
+    white-space: nowrap;
+}
+
+.aitf-truncate {
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* ============================================================
+   Filters
+   ============================================================ */
+.aitf-filter-form {
+    margin: 0;
+}
+
+.aitf-filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: flex-end;
+}
+
+.aitf-filter-field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.aitf-filter-field label {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    color: #646970;
+}
+
+.aitf-filter-actions {
+    display: flex;
+    gap: 6px;
+    align-items: flex-end;
+    flex-direction: row !important;
+}
+
+/* ============================================================
+   Pagination
+   ============================================================ */
+.aitf-pagination {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #f0f0f1;
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+}
+
+/* ============================================================
+   Categories Grid
+   ============================================================ */
+.aitf-categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 12px;
+}
+
+.aitf-category-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 16px;
+    background: #f6f7f7;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    transition: border-color 0.2s;
+}
+
+.aitf-category-card:hover {
+    border-color: #2271b1;
+}
+
+.aitf-category-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.aitf-category-info .dashicons {
+    color: #2271b1;
+}
+
+.aitf-category-count {
+    font-size: 12px;
+    color: #8c8f94;
+}
+
+.aitf-category-card .aitf-btn-danger {
+    padding: 2px 6px !important;
+    min-height: auto;
+}
+
+.aitf-category-card .aitf-btn-danger .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+}
+
+/* ============================================================
+   Empty State
+   ============================================================ */
+.aitf-empty-state {
+    text-align: center;
+    padding: 40px 20px;
+    color: #8c8f94;
+}
+
+.aitf-empty-state .dashicons {
+    font-size: 48px;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 12px;
+    opacity: 0.4;
+}
+
+.aitf-empty-state p {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* ============================================================
+   Info Box
+   ============================================================ */
+.aitf-info-box {
+    background: #f0f6fc;
+    border-color: #c3d9ed;
+}
+
+.aitf-info-box p {
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.aitf-info-box .dashicons {
+    color: #2271b1;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* ============================================================
+   Responsive
+   ============================================================ */
+@media screen and (max-width: 782px) {
+    .aitf-status-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .aitf-filter-row {
+        flex-direction: column;
+    }
+
+    .aitf-filter-field {
+        width: 100%;
+    }
+
+    .aitf-input-group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .aitf-input-group input {
+        max-width: none !important;
+    }
+
+    .aitf-form-table th {
+        width: auto;
+    }
+
+    .aitf-logs-table {
+        font-size: 12px;
+    }
+
+    .aitf-truncate {
+        max-width: 120px;
+    }
+}
+
+/* ============================================================
+   Post list — Stock image modal
+   ============================================================ */
+.aitf-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.aitf-modal-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.aitf-modal-content {
+    position: relative;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+    max-width: 720px;
+    width: 100%;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.aitf-modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    border-bottom: 1px solid #c3c4c7;
+}
+
+.aitf-modal-header h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.aitf-modal-close {
+    background: none;
+    border: none;
+    font-size: 24px;
+    line-height: 1;
+    cursor: pointer;
+    color: #50575e;
+    padding: 0 4px;
+}
+
+.aitf-modal-close:hover {
+    color: #1d2327;
+}
+
+.aitf-modal-body {
+    padding: 20px;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.aitf-stock-search-row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.aitf-stock-search-row input {
+    flex: 1;
+    max-width: 320px;
+}
+
+.aitf-stock-image-message {
+    min-height: 24px;
+    margin-bottom: 12px;
+    font-size: 13px;
+}
+
+.aitf-stock-image-results {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 12px;
+}
+
+.aitf-stock-image-item {
+    border: 1px solid #c3c4c7;
+    border-radius: 4px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.aitf-stock-image-item img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    display: block;
+}
+
+.aitf-stock-image-item .aitf-set-featured-btn {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    font-size: 12px;
+    cursor: pointer;
+    border: none;
+    background: #2271b1;
+    color: #fff;
+}
+
+.aitf-stock-image-item .aitf-set-featured-btn:hover:not(:disabled) {
+    background: #135e96;
+}
+
+.aitf-stock-image-item .aitf-set-featured-btn:disabled {
+    opacity: 0.7;
+    cursor: wait;
+}
+
+.aitf-modal-footer {
+    padding: 12px 20px;
+    border-top: 1px solid #c3c4c7;
+}
